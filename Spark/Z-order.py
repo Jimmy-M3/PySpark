@@ -51,8 +51,10 @@ def show_table(t: list, cols: list):
 
 if __name__ == '__main__':
     # x = [1,2,3,4,5,6,7,8,9,100]
-    x = np.random.randint(low=1, high=255, size=100, dtype='i')
-    y = np.random.randint(low=1, high=255, size=100, dtype='i')
+    x = np.random.randint(low=1, high=255, size=500, dtype='i')
+    y = np.random.randint(low=1, high=255, size=500, dtype='i')
+    # x = [i for i in range(1,50,1)]
+    # y = [i for i in range(50,1,-1)]
     table = list(zip(x, y))
     z_values = cal_z_value(table)
     z_orderd_table = list(zip(z_values, x, y))
